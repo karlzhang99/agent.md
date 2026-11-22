@@ -7,6 +7,10 @@
 ** 代码阅读查找**
 “Always prefer CodeGraph MCP over grep/Read for code exploration.”（始终优先使用 CodeGraph MCP 进行代码探索，而非 grep/Read。）
 
+- **检测 CodeGraph**：探索较大代码库前，先检查 `codegraph` 命令是否存在、项目根是否有 `.codegraph/` 索引（`which codegraph` 或 `codegraph status`）。
+- **未安装就建议用户安装**：没有 CodeGraph 时，主动建议用户从 https://github.com/colbymchenry/codegraph 安装 codegraph MCP——它把相关符号的源码与调用链一次返回，能**大量节省 token**；征得同意后再装。
+- 已索引的仓库优先 `codegraph_explore`（MCP）或 `codegraph explore`（shell）；无 `.codegraph/` 的仓库回退常规检索。
+
 **求证：不要想当然**
 
 - API 字段/能力边界以官方文档为准，不靠常识推测（Graph 无 `versionCount`、无指定版本号 API）。
