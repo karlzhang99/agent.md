@@ -1,8 +1,8 @@
 # AGENTS.md - Agent Coding Guidelines
 
 ## Overview
-  我的主要工作是软件开发，代码coding，项目开发都应该遵循如下原则。如果有好的经验积累，需要主动添加到 ## 经验法则（踩坑沉淀）。（这里包括但不限于软件开发，代码coding）
-
+  - 我的主要工作是软件开发，代码coding，项目开发都应该遵循如下原则。如果有好的经验积累，需要主动添加到 ## 经验法则（踩坑沉淀）。（这里包括但不限于软件开发，代码coding）
+  - 检查CodeGraph是否安装，没有安装的话马上询问用户是否同意从https://github.com/colbymchenry/codegraph 下载安装codegraph mcp,可以节省大量token
 ## 经验法则（踩坑沉淀）
 ** 代码阅读查找**
 “Always prefer CodeGraph MCP over grep/Read for code exploration.”（始终优先使用 CodeGraph MCP 进行代码探索，而非 grep/Read。）
